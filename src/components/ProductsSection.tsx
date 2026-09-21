@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
-import { ArrowRight, MessageSquareText } from "lucide-react";
+import { ArrowRight, MessageSquareText, Package } from "lucide-react";
 import Reveal, { fadeUp, staggerContainer } from "./Reveal";
 
 const products = [
@@ -14,16 +14,16 @@ const products = [
     image: "/products/redbull.jpg",
   },
   {
-    name: "Coca-Cola",
-    tag: "Soft drinks",
-    text: "2L bottles and multipacks, by the case or pallet.",
-    image: "/products/cola.jpg",
+    name: "Pınar Water",
+    tag: "Bottled water",
+    text: "Bottled water available by the case or pallet.",
+    image: "",
   },
   {
-    name: "Volvic Natural Mineral Water",
-    tag: "Bottled water",
-    text: "1.5L cases, for retail, catering and vending.",
-    image: "/products/volvic.jpg",
+    name: "Disposable Black Gloves",
+    tag: "Unbranded",
+    text: "Bulk cases of unbranded disposable gloves for trade use.",
+    image: "",
   },
 ];
 
@@ -66,13 +66,19 @@ export default function ProductsSection() {
               className="overflow-hidden rounded-2xl border border-border bg-white shadow-sm hover:shadow-lg hover:shadow-ink/5"
             >
               <div className="relative aspect-square w-full bg-bg-soft">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover"
-                />
+                {product.image ? (
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center text-muted">
+                    <Package size={44} />
+                  </div>
+                )}
                 <span className="absolute left-3 top-3 rounded-full bg-ink/85 px-3 py-1 text-xs font-semibold text-accent backdrop-blur">
                   {product.tag}
                 </span>

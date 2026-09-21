@@ -102,8 +102,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-accent" />
                 <span>
-                  3rd Floor, Rathore Heights, Plot No. 14, Johar Boulevard,
-                  DHA Phase 5, Islamabad, Pakistan
+                  Unit 1, Trade Park, London, United Kingdom
                 </span>
               </li>
             </ul>

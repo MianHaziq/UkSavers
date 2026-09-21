@@ -6,13 +6,13 @@ const photos = [
     src: "/photos/warehouse.jpg",
     alt: "UK Savers delivery truck being loaded with pallets of Coca-Cola and Red Bull",
     title: "Loaded and out the same day",
-    text: "Pallets of Coca-Cola and Red Bull going straight from our warehouse onto the truck.",
+    text: "Orders picked, palletised and loaded straight from our warehouse onto the truck.",
   },
   {
     src: "/photos/water.jpg",
     alt: "Pallets of Volvic and Evian bottled water being loaded at the UK Savers warehouse",
     title: "Bottled water by the pallet",
-    text: "Volvic and Evian moving in volume for retail, catering and vending customers.",
+    text: "Moving volume orders for retail, catering and vending customers.",
   },
 ];
 

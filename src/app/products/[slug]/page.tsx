@@ -117,7 +117,7 @@ export default async function ProductPage({
             <div className="flex items-center justify-center rounded-2xl border border-border bg-white p-10">
               {product.image ? (
                 <Image
-                  src={`/catalog/${product.image}`}
+                  src={product.image}
                   alt={product.name}
                   width={320}
                   height={320}
@@ -201,7 +201,7 @@ export default async function ProductPage({
                       <div className="relative mx-auto h-28 w-28">
                         {p.image ? (
                           <Image
-                            src={`/catalog/${p.image}`}
+                            src={p.image}
                             alt={p.name}
                             fill
                             sizes="112px"

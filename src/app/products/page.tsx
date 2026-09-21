@@ -25,9 +25,8 @@ export default function ProductsPage() {
               What we supply
             </h1>
             <p className="mt-4 text-white/70">
-              A selection of the food, drinks, confectionery, household,
-              cleaning and health &amp; beauty lines we stock. Not listed? Ask
-              us and we&apos;ll source it.
+              Lines we currently supply to trade customers. Looking for
+              something else? Tell us what you need and we&apos;ll source it.
             </p>
             <Link
               href="/#contact"

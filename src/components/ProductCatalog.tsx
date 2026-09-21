@@ -109,7 +109,7 @@ export default function ProductCatalog() {
               <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-lg bg-white">
                 {p.image ? (
                   <Image
-                    src={`/catalog/${p.image}`}
+                    src={p.image}
                     alt={p.name}
                     fill
                     sizes="96px"
