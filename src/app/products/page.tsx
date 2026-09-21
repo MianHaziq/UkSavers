@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 import ProductCatalog from "@/components/ProductCatalog";
 
 export const metadata: Metadata = {
-  title: "Product Catalogue | UK Savers Ltd",
+  title: "Product Catalogue | UK Savers",
   description:
-    "Browse the UK Savers Ltd wholesale catalogue — food, drinks, confectionery, household, cleaning, health and beauty brands supplied across the UK.",
+    "Browse the UK Savers wholesale catalogue — food, drinks, confectionery, household, cleaning, health and beauty brands supplied across the UK.",
 };
 
 export default function ProductsPage() {

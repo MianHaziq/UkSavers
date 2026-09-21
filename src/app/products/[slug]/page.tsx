@@ -57,10 +57,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const product = products.find((p) => p.slug === slug);
-  if (!product) return { title: "Product not found | UK Savers Ltd" };
+  if (!product) return { title: "Product not found | UK Savers" };
   return {
-    title: `${product.name} | UK Savers Ltd`,
-    description: `${product.name} by ${product.brand} — available wholesale from UK Savers Ltd. Request trade pricing.`,
+    title: `${product.name} | UK Savers`,
+    description: `${product.name} by ${product.brand} — available wholesale from UK Savers. Request trade pricing.`,
   };
 }
 

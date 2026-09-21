@@ -41,7 +41,7 @@ export default function Hero() {
             variants={fadeUp}
             className="mx-auto mt-5 max-w-lg text-base leading-relaxed text-white/75 md:mx-0 md:text-lg"
           >
-            UK Savers Ltd sources and supplies food, household, health and
+            UK Savers sources and supplies food, household, health and
             lifestyle brands at prices built for independent retailers,
             cash &amp; carries and online sellers.
           </motion.p>

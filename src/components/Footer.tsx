@@ -110,7 +110,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/50 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} UK Savers Ltd. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} UK Savers. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-accent">
               Privacy Policy
