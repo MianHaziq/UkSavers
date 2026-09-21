@@ -12,7 +12,7 @@ const features = [
   },
   {
     icon: Truck,
-    title: "Nationwide Delivery",
+    title: "UK-Wide Delivery",
     text: "Reliable dispatch across the UK, from single cases to full pallet loads.",
   },
   {

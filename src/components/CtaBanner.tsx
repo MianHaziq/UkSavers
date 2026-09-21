@@ -20,8 +20,8 @@ export default function CtaBanner() {
             Ready to start saving on wholesale?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-white/70">
-            Register your trade account today and get access to full
-            pricing, live stock and a dedicated account manager.
+            Get in touch to set up a trade account and receive our
+            latest wholesale pricing.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link

@@ -1,15 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X, ArrowRight } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "#why-us", label: "Why Us" },
-  { href: "#about-us", label: "About" },
-  { href: "#contact", label: "Contact" },
+  { href: "/products", label: "Products" },
+  { href: "/#why-us", label: "Why Us" },
+  { href: "/#about-us", label: "About" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -36,11 +38,16 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-[1180px] items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-ink font-display text-base font-extrabold text-accent">
-            UK
-          </span>
+          <Image
+            src="/logo.png"
+            alt="UK Savers"
+            width={40}
+            height={40}
+            className="h-10 w-10 rounded-full"
+            priority
+          />
           <span className="font-display text-lg font-extrabold text-ink">
-            Savers <span className="text-accent">Ltd</span>
+            UK <span className="text-accent">Savers</span>
           </span>
         </Link>
 
@@ -61,7 +68,7 @@ export default function Header() {
 
         <div className="hidden md:block">
           <Link
-            href="#contact"
+            href="/#contact"
             className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-ink shadow-sm shadow-accent/30 transition-transform hover:-translate-y-0.5 hover:bg-accent-dark"
           >
             Get a Quote
@@ -94,11 +101,11 @@ export default function Header() {
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="overflow-hidden border-t border-border bg-white md:hidden"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="absolute inset-x-0 top-full border-t border-border bg-white shadow-lg shadow-ink/10 md:hidden"
           >
             <nav aria-label="Mobile" className="flex flex-col gap-4 px-6 py-4">
               {navLinks.map((link, i) => (
@@ -118,7 +125,7 @@ export default function Header() {
                 </motion.div>
               ))}
               <Link
-                href="#contact"
+                href="/#contact"
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-ink"
               >

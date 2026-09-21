@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone, MapPin, Globe, Share2, MessageCircle } from "lucide-react";
 
 const columns = [
@@ -6,18 +7,19 @@ const columns = [
     title: "Company",
     links: [
       { href: "/", label: "Home" },
-      { href: "#about-us", label: "How It Works" },
-      { href: "#why-us", label: "Why Choose Us" },
-      { href: "#contact", label: "Contact" },
+      { href: "/products", label: "Products" },
+      { href: "/#about-us", label: "How It Works" },
+      { href: "/#why-us", label: "Why Choose Us" },
+      { href: "/#contact", label: "Contact" },
     ],
   },
   {
     title: "Categories",
     links: [
-      { href: "#categories", label: "Confectionery & Snacks" },
-      { href: "#categories", label: "Food & Drink" },
-      { href: "#categories", label: "Household Essentials" },
-      { href: "#categories", label: "Health & Beauty" },
+      { href: "/products", label: "Snacks & Sweets" },
+      { href: "/products", label: "Drinks & Beverages" },
+      { href: "/products", label: "Laundry & Household" },
+      { href: "/products", label: "Health & Beauty" },
     ],
   },
 ];
@@ -29,16 +31,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div>
             <Link href="/" className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent font-display text-base font-extrabold text-ink">
-                UK
-              </span>
+              <Image
+                src="/logo.png"
+                alt="UK Savers"
+                width={40}
+                height={40}
+                className="h-10 w-10 rounded-full"
+              />
               <span className="font-display text-lg font-extrabold text-white">
-                Savers Ltd
+                UK <span className="text-accent">Savers</span>
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed">
               A UK-based wholesale and distribution business supplying
-              independent retailers and traders nationwide with everyday
+              independent retailers and traders across the UK with everyday
               brands at real value.
             </p>
             <div className="mt-6 flex items-center gap-3">
@@ -95,7 +101,10 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-accent" />
-                <span>UK Savers Ltd, London, United Kingdom</span>
+                <span>
+                  3rd Floor, Rathore Heights, Plot No. 14, Johar Boulevard,
+                  DHA Phase 5, Islamabad, Pakistan
+                </span>
               </li>
             </ul>
           </div>

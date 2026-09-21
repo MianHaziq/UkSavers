@@ -15,7 +15,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "UK Savers Ltd | Wholesale Value, Delivered Nationwide",
+  title: "UK Savers Ltd | Wholesale Value, Delivered Across the UK",
   description:
     "UK Savers Ltd sources and distributes discounted food, household, health and lifestyle brands to retailers, wholesalers and traders across the UK.",
 };

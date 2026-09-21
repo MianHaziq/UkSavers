@@ -46,7 +46,7 @@ const categories = [
 
 export default function CategoriesSection() {
   return (
-    <section id="categories" className="bg-bg-soft py-20">
+    <section id="categories" className="border-t border-border bg-bg-soft py-20">
       <div className="mx-auto max-w-[1180px] px-6">
         <Reveal className="mx-auto max-w-xl text-center">
           <span className="text-sm font-semibold uppercase tracking-wide text-accent-dark">

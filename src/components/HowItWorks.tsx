@@ -16,7 +16,7 @@ const steps = [
   },
   {
     number: "03",
-    title: "Fast Nationwide Delivery",
+    title: "Fast UK-Wide Delivery",
     text: "We pick, pack and dispatch quickly, with tracking on every order.",
   },
 ];
