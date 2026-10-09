@@ -14,16 +14,16 @@ const products = [
     image: "/products/redbull.jpg",
   },
   {
-    name: "Pınar Water",
-    tag: "Bottled water",
-    text: "Bottled water available by the case or pallet.",
-    image: "",
+    name: "Eazy Pop Salted Microwave Popcorn",
+    tag: "Confectionery & snacks",
+    text: "Perfectly popped in minutes — available by the case or pallet.",
+    image: "/products/eazy-pop-salted-popcorn.jpg",
   },
   {
-    name: "Disposable Black Gloves",
-    tag: "Unbranded",
-    text: "Bulk cases of unbranded disposable gloves for trade use.",
-    image: "",
+    name: "Eazy Pop Butter Flavour Microwave Popcorn",
+    tag: "Confectionery & snacks",
+    text: "Perfectly popped in minutes — available by the case or pallet.",
+    image: "/products/eazy-pop-butter-popcorn.jpg",
   },
 ];
 
@@ -65,14 +65,15 @@ export default function ProductsSection() {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="overflow-hidden rounded-2xl border border-border bg-white shadow-sm hover:shadow-lg hover:shadow-ink/5"
             >
-              <div className="relative aspect-square w-full bg-bg-soft">
+              <div className="relative aspect-square w-full bg-bg-soft p-8">
                 {product.image ? (
                   <Image
                     src={product.image}
                     alt={product.name}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover"
+                    unoptimized
+                    className="object-contain"
                   />
                 ) : (
                   <div className="flex h-full w-full items-center justify-center text-muted">
