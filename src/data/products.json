@@ -40,5 +40,33 @@
     "casesPerLayer": "",
     "layersPerPallet": "",
     "uom": "Bulk case"
+  },
+  {
+    "slug": "eazy-pop-salted-microwave-popcorn",
+    "name": "Eazy Pop Salted Microwave Popcorn",
+    "brand": "Eazy Pop",
+    "category": "Confectionery & Snacks",
+    "size": "100g",
+    "image": "/products/eazy-pop-salted-popcorn.jpg",
+    "ean": "",
+    "origin": "",
+    "packSize": "",
+    "casesPerLayer": "",
+    "layersPerPallet": "",
+    "uom": "Case or pallet"
+  },
+  {
+    "slug": "eazy-pop-butter-microwave-popcorn",
+    "name": "Eazy Pop Butter Flavour Microwave Popcorn",
+    "brand": "Eazy Pop",
+    "category": "Confectionery & Snacks",
+    "size": "85g",
+    "image": "/products/eazy-pop-butter-popcorn.jpg",
+    "ean": "",
+    "origin": "",
+    "packSize": "",
+    "casesPerLayer": "",
+    "layersPerPallet": "",
+    "uom": "Case or pallet"
   }
 ]
