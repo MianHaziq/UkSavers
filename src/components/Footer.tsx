@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin, Globe, Share2, MessageCircle } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
+// Phone, Globe, Share2, MessageCircle icons kept here for reference —
+// re-add to the import above if the phone number / social links are restored.
 
 const columns = [
   {
@@ -47,7 +49,7 @@ export default function Footer() {
               independent retailers and traders across the UK with everyday
               brands at real value.
             </p>
-            <div className="mt-6 flex items-center gap-3">
+            {/* <div className="mt-6 flex items-center gap-3">
               {[Globe, Share2, MessageCircle].map((Icon, i) => (
                 <span
                   key={i}
@@ -56,7 +58,7 @@ export default function Footer() {
                   <Icon size={16} />
                 </span>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {columns.map((column) => (
@@ -93,12 +95,12 @@ export default function Footer() {
                   info@uksaversltd.com
                 </a>
               </li>
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <Phone size={16} className="mt-0.5 shrink-0 text-accent" />
                 <a href="tel:+442030001234" className="hover:text-accent">
                   +44 (0)20 3000 1234
                 </a>
-              </li>
+              </li> */}
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-accent" />
                 <span>

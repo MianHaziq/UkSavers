@@ -31,12 +31,12 @@ export default function CtaBanner() {
               Register as a Trade Partner
               <ArrowRight size={16} />
             </Link>
-            <Link
+            {/* <Link
               href="tel:+442030001234"
               className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10 sm:w-auto"
             >
               Call Our Team
-            </Link>
+            </Link> */}
           </div>
         </div>
       </Reveal>
